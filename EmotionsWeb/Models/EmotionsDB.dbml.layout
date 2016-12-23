@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EmotionsDB">
+  <DataContextMoniker Name="/EmotionsDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6bff83df-f3dc-41af-90cd-be71640dedc0" absoluteBounds="0.75, 5.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/EmotionsDBDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15a7f9b5-23c4-4ca5-be83-6218ca0cb0b2" absoluteBounds="0.765, 5.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e93b8b53-f304-4a05-81e4-79548883ed06" absoluteBounds="0.75, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/EmotionsDBDataContext/Icon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4bdbf4d-bf2e-415c-84dc-892562636bd9" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddbb422c-4647-48d9-8d17-50201f30134a" absoluteBounds="4.125, 2.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EmotionsDBDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b49e4eed-98f5-44c0-88c3-c582dd1c082b" absoluteBounds="4.14, 2.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.56814697265625); (4.125 : 2.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EmotionsDBDataContext/Icon/Icon_Post" />
+      <nodes>
+        <classShapeMoniker Id="e93b8b53-f304-4a05-81e4-79548883ed06" />
+        <classShapeMoniker Id="ddbb422c-4647-48d9-8d17-50201f30134a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.13544840494792); (5.125 : 6.13544840494792); (5.125 : 4.53049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EmotionsDBDataContext/User/User_Post" />
+      <nodes>
+        <classShapeMoniker Id="6bff83df-f3dc-41af-90cd-be71640dedc0" />
+        <classShapeMoniker Id="ddbb422c-4647-48d9-8d17-50201f30134a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
