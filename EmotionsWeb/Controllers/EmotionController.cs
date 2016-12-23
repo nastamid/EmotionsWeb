@@ -18,6 +18,7 @@ namespace EmotionsWeb.Controllers
 
         public ActionResult Map()
         {
+            //Map
             var posts = db.Posts.OrderByDescending(x => x.Id).ToList();
             return View(posts);
         }
